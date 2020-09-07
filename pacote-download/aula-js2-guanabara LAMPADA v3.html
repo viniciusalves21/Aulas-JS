@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Aula JS 2 Guanabara</title>
+    <meta charset="utf-8">
+    <script>
+      var quebrada = false;
+      function mudaLampada (tipo){
+        
+        if (!quebrada) {
+          document.getElementById("luz").src = "" + tipo + ".jpg";
+          if (tipo == 'lamp-quebrada'){
+            quebrada = true;
+          }
+        }
+        
+      }
+    </script>
+  </head>
+  <body>
+    <h1> acenda a lâmpada</h1>
+   
+  	<img src="lamp.jpg" id="luz" onmousemove="mudaLampada('lamp-acesa')" onmouseout="mudaLampada('lamp')" onclick="mudaLampada('lamp-quebrada')"/> 
+  </body>
+</html>

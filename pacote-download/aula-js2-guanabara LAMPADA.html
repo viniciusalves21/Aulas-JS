@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Aula JS 2 Guanabara</title>
+    <meta charset="utf-8">
+    <script>
+      function acendeLampada (){
+        document.getElementById("luz").src = "lamp-acessa.jpg";
+      }
+      function apagaLampada(){
+        document.getElementById("luz").src = "lamp.jpg";
+      }
+      function lampQuebrada(){
+        document.getElementById("luz").src = "lamp-quebrada.jpg";
+      }
+    </script>
+  </head>
+  <body>
+    <h1> acenda a lâmpada</h1>
+   
+  	<img src="lamp.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="lampQuebrada()" /> 
+  </body>
+</html>
